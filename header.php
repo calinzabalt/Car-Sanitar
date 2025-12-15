@@ -2,15 +2,12 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <title>ASOCIAȚIA C.A.R. SANITAR RM. SĂRAT – Împrumuturi rapide și economii sigure</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri();?>/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri();?>/assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="<?php echo get_stylesheet_directory_uri();?>/assets/favicons/site.webmanifest" />
-    <meta name="description" content="ASOCIAȚIA C.A.R. SANITAR RM. SĂRAT oferă împrumuturi rapide cu dobândă fixă, fără comisioane ascunse, și posibilitatea de a economisi lunar în fondul social propriu. Soluția ideală pentru finanțele tale!">
-    <meta name="keywords" content="CAR Sanitar, împrumuturi rapide, economii sigure, fond social, dobândă fixă, fără comisioane, Râmnic Sărat, Buzău">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

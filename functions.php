@@ -5,6 +5,7 @@ function car_sanitar_enqueue_scripts() {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', array(), null);
     
     wp_enqueue_style('car-sanitar-style', get_stylesheet_uri(), array(), '1.0');
+    wp_enqueue_script('moment-js', 'https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js', array(), '2.29.4', true);
     wp_enqueue_script('car-sanitar-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'car_sanitar_enqueue_scripts');
@@ -99,5 +100,16 @@ function handle_contact_submission() {
     }
 }
 
+function custom_excerpt_length_cards( $length ) {
+    if ( is_front_page() || is_home() ) {
+        return 35; 
+    }
+    return $length;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length_cards', 999 );
 
+function custom_excerpt_more( $more ) {
+    return '…';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
 ?>

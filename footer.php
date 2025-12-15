@@ -45,7 +45,7 @@
     <div class="footer-bottom">
         <div class="container">
             <p class="copyright">&copy; <?php echo date('Y'); ?> C.A.R. Sanitar Râmnicu Sărat. Toate drepturile rezervate.</p>
-            <p class="copyright">Creat de <a href="https://webuilders.dev" target="_blank" rel="noopener noreferrer">webuilders.dev</a>.</p>
+            <p class="copyright">Creat de <a href="https://webuilders.dev" target="_blank" rel="noopener noreferrer">webuilders.dev</a></p>
         </div>
     </div>
 </footer>
